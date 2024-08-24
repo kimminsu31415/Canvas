@@ -1,11 +1,20 @@
-import React from 'react';
-import useCanvas from './useCanvas';
+// Canvas.js
+
+import React, { useRef, useEffect } from 'react';
 
 const Canvas = (props) => {
-  const { draw, ...rest } = props;
-  const canvasRef = useCanvas(draw);
+  const canvasRef = useRef(null);
 
-  return <canvas ref={canvasRef} {...rest} />;
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas.getContext('2d');
+
+    // 초기 설정: 파란색 배경 직사각형
+    context.fillStyle = '#0000FF';
+    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+  }, []);
+
+  return <canvas ref={canvasRef} {...props} />;
 };
 
 export default Canvas;
