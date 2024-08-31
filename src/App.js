@@ -1,13 +1,11 @@
-// App.js
-
 import React from 'react';
 import Canvas from './Canvas';
 
 function App() {
   return (
     <div>
-      <h1>Canvas with React</h1>
-      <Canvas width={500} height={300} />
+      <h1>Canvas with React - Sun Path Visualization</h1>
+      <Canvas />
     </div>
   );
 }
