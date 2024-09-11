@@ -1,5 +1,3 @@
-// App.js
-
 import React from 'react';
 import Canvas from './Canvas';
 
