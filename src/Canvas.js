@@ -10,7 +10,6 @@ const Canvas = (props) => {
     context.fillStyle = 'pink';
     context.fillRect(0, 0, context.canvas.width, context.canvas.height);
 
-    // 여기에 그리기 코드를 작성하세요
     // 선의 두께 설정
     context.lineWidth = 4;
 
@@ -26,18 +25,14 @@ const Canvas = (props) => {
     }
     context.strokeStyle = 'rgba(0, 0, 255, 1)'; // 파란색 선
     context.stroke();
-
-    // 녹색 사각형 그리기
     context.fillStyle = 'rgba(0, 255, 0, 0.5)'; // 반투명한 녹색
     context.fillRect(50, 150, 100, 100); // (x, y, width, height)
 
-    // 빨간색 원 그리기
     context.beginPath();
     context.arc(300, 200, 50, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
     context.fillStyle = 'rgba(255, 0, 0, 0.7)'; // 반투명한 빨간색
     context.fill();
 
-    // 노란색 선 그리기
     context.beginPath();
     context.moveTo(50, 250); // 시작점 설정
     context.lineTo(350, 250); // 끝점 설정
