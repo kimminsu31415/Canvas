@@ -10,10 +10,8 @@ const Canvas = (props) => {
     context.fillStyle = 'pink';
     context.fillRect(0, 0, context.canvas.width, context.canvas.height);
 
-    // 선의 두께 설정
     context.lineWidth = 4;
 
-    // 파란색 사인파 그리기
     context.beginPath();
     for (let x = 0; x < context.canvas.width; x++) {
       const y = 100 + Math.sin(x * 0.05) * 50; // 사인파 생성
