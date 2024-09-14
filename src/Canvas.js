@@ -16,9 +16,9 @@ const Canvas = (props) => {
     for (let x = 0; x < context.canvas.width; x++) {
       const y = 100 + Math.sin(x * 0.05) * 50; // 사인파 생성
       if (x === 0) {
-        context.moveTo(x, y); // 시작점 설정
+        context.moveTo(x, y);
       } else {
-        context.lineTo(x, y); // 선 그리기
+        context.lineTo(x, y);
       }
     }
     context.strokeStyle = 'rgba(0, 0, 255, 1)'; // 파란색 선
@@ -32,8 +32,8 @@ const Canvas = (props) => {
     context.fill();
 
     context.beginPath();
-    context.moveTo(50, 250); // 시작점 설정
-    context.lineTo(350, 250); // 끝점 설정
+    context.moveTo(50, 250);
+    context.lineTo(350, 250);
     context.strokeStyle = 'rgba(255, 255, 0, 1)'; // 노란색 선
     context.lineWidth = 5; // 선 두께 설정
     context.stroke();
