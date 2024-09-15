@@ -27,7 +27,7 @@ const Canvas = (props) => {
     context.fillRect(50, 150, 100, 100); // (x, y, width, height)
 
     context.beginPath();
-    context.arc(300, 200, 50, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
+    context.arc(300, 200, 50, 0, 2 * Math.PI);
     context.fillStyle = 'rgba(255, 0, 0, 0.7)'; // 반투명한 빨간색
     context.fill();
 
